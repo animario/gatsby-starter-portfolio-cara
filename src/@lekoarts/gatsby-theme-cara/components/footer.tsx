@@ -19,22 +19,7 @@ const Footer = () => {
         {isDark ? `Light` : `Dark`}
       </button>
       {new Date().getFullYear()}. No Copyrights reserved.
-      <br />
-        <img width="30" height="30" src="https://img.lekoarts.de/gatsby/logo_w30.png" alt="LekoArts Logo" />
-        {` `}
-        <Link
-          aria-label="Link to the theme's GitHub repository"
-          sx={{ ml: 2 }}
-          href="https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-cara"
-        >
-          Theme
-        </Link>
-        <div sx={{ mx: 1 }}>by</div>
-        {` `}
-        <Link aria-label="Link to the theme author's website" href="https://www.lekoarts.de/en">
-          LekoArts
-        </Link>
-      </Flex>
+      <img width="30" height="30" src="https://img.lekoarts.de/gatsby/logo_w30.png" alt="LekoArts Logo" />
     </Box>
   )
 }
