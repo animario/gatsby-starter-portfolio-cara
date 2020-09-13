@@ -18,8 +18,7 @@ const Footer = () => {
       >
         {isDark ? `Light` : `Dark`}
       </button>
-      {new Date().getFullYear()}. No Copyrights reserved.
-      <img width="30" height="30" src="https://img.lekoarts.de/gatsby/logo_w30.png" alt="LekoArts Logo" />
+      <img width="30" height="30" src="https://img.lekoarts.de/gatsby/logo_w30.png" alt="LekoArts Logo" /> {new Date().getFullYear()}. No Copyrights reserved.
     </Box>
   )
 }
