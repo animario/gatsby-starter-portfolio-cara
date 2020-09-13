@@ -18,18 +18,8 @@ const Footer = () => {
       >
         {isDark ? `Light` : `Dark`}
       </button>
-      Copyright &copy; {new Date().getFullYear()}. All rights reserved.
+      {new Date().getFullYear()}. No Copyrights reserved.
       <br />
-      <Flex
-        sx={{
-          justifyContent: `center`,
-          alignItems: `center`,
-          mt: 3,
-          color: `text`,
-          fontWeight: `semibold`,
-          a: { color: `text` },
-        }}
-      >
         <img width="30" height="30" src="https://img.lekoarts.de/gatsby/logo_w30.png" alt="LekoArts Logo" />
         {` `}
         <Link
