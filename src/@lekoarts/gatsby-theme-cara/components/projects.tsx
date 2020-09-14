@@ -23,7 +23,7 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
           sx={{
             display: `grid`,
             gridGap: [4, 4, 4, 5],
-            gridTemplateColumns: [`1fr`, `1fr`, `repeat(2, 1fr)`],
+            gridTemplateColumns: [`1fr`, `1fr`, `repeat(2, 1fr)`]
           }}
         >
           <ProjectsMDX />
