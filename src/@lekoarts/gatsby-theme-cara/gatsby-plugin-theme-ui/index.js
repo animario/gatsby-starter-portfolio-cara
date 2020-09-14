@@ -89,36 +89,30 @@ const theme = merge(tailwind, {
       textShadow: `rgba(255, 255, 255, 0.15) 0px 5px 35px`,
       letterSpacing: `wide`,
       color: `heading`,
-      alignSelf: `center`,
     },
     h2: {
       fontSize: [4, 5, 6],
       mt: 2,
       mb: 2,
       color: `heading`,
-      alignSelf: `center`,
     },
     h3: {
       fontSize: [3, 4, 5],
       mt: 3,
       color: `heading`,
-      alignSelf: `center`,
     },
     h4: {
       fontSize: [2, 3, 4],
       color: `heading`,
-      alignSelf: `center`,
     },
     h5: {
       fontSize: [1, 2, 3],
       color: `heading`,
-      alignSelf: `center`,
     },
     h6: {
       fontSize: 1,
       mb: 2,
       color: `heading`,
-      alignSelf: `center`,
     },
   },
   layout: {
