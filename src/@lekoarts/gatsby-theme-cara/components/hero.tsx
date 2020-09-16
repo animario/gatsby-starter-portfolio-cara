@@ -14,6 +14,7 @@ const Toggle = () => {
   const toggleColorMode = (e: any) => {
     setColorMode(isDark ? `light` : `dark`)
   }
+}
 
 const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
