@@ -8,15 +8,13 @@ import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
 import Intro from "../sections/intro"
 
-const Toggle = () => {
-  const [colorMode, setColorMode] = useColorMode()
-  const isDark = colorMode === `dark`
-  const toggleColorMode = (e: any) => {
-    setColorMode(isDark ? `light` : `dark`)
-  }
-}
-
-const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
+const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
+  
+    const [colorMode, setColorMode] = useColorMode()
+    const isDark = colorMode === `dark`
+    const toggleColorMode = (e: any) => {
+      setColorMode(isDark ? `light` : `dark`)
+    }
   <div>
     <Divider speed={0.2} offset={offset} factor={factor}>
       <UpDown>
@@ -60,6 +58,6 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       </Inner>
     </Content>
   </div>
-)
+}
 
 export default Hero
