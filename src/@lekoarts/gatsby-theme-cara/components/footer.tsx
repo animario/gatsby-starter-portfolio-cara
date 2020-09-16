@@ -18,7 +18,6 @@ const Footer = () => {
       >
         {isDark ? `Light` : `Dark`}
       </button>
-      {new Date().getFullYear()} <img width="30" height="30" src="/favicon-32x32.png" alt="DOMO Network Logo" /> No Copyrights reserved.
     </Box>
   )
 }
