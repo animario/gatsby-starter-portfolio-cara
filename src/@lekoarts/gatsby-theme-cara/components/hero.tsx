@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { Box, Flex, Link, useColorMode, jsx } from "theme-ui"
 import Divider from "../elements/divider"
 import Inner from "../elements/inner"
 import Content from "../elements/content"
@@ -7,6 +7,13 @@ import SVG from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
 import Intro from "../sections/intro"
+
+const Toggle = () => {
+  const [colorMode, setColorMode] = useColorMode()
+  const isDark = colorMode === `dark`
+  const toggleColorMode = (e: any) => {
+    setColorMode(isDark ? `light` : `dark`)
+  }
 
 const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
@@ -40,6 +47,14 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     </Divider>
     <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset} factor={factor}>
       <Inner>
+      <button
+        sx={{ variant: `buttons.toggle`, fontWeight: `semibold`, display: `block`, mx: `auto`, mb: 3 }}
+        onClick={toggleColorMode}
+        type="button"
+        aria-label="Toggle dark mode"
+      >
+        {isDark ? `Light` : `Dark`}
+      </button>
         <Intro />
       </Inner>
     </Content>
