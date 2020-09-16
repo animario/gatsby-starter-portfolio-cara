@@ -9,7 +9,7 @@ const Footer = () => {
   }
 
   return (
-    <Box as="footer" variant="footer">
+    <Box>
       <button
         sx={{ variant: `buttons.toggle`, fontWeight: `semibold`, display: `block`, mx: `auto`, mb: 3 }}
         onClick={toggleColorMode}
