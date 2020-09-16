@@ -7,6 +7,7 @@ import SVG from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
 import Intro from "../sections/intro"
+import Footer from "./footer"
 
 const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
@@ -39,6 +40,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       <SVG icon="hexa" width={8} stroke color="icon_darker" left="80%" top="70%" />
     </Divider>
     <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset} factor={factor}>
+    <Footer />
       <Inner>
         <Intro />
       </Inner>
