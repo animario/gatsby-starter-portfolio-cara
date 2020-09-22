@@ -13,7 +13,6 @@ module.exports = {
     siteDescription: `Redefining social networks, starting with the community.`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
-    basePath,
   },
   plugins: [
     {
