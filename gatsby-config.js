@@ -6,10 +6,14 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    // You can overwrite values here that are used for the SEO component
-    // Of course you can also add new values here to query them like usual
-    // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitleAlt: `DOMO Network`,
+    siteTitle: `DOMO Network`,
+    siteTitleAlt: `DOMO`,
+    siteHeadline: `Welcome to the DOMO Network`,
+    //siteUrl: `https://cara.lekoarts.de`,
+    siteDescription: `Redefining social networks, starting with the community.`,
+    siteLanguage: `en`,
+    siteImage: `/banner.jpg`,
+    basePath,
   },
   plugins: [
     {
@@ -43,6 +47,7 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-anchor-links`,
     shouldAnalyseBundle && {
       resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
       options: {
